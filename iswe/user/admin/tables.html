@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lumino - Tables</title>
+<title>Northern Fame e-Bookstore</title>
 
 <link href="../../resources/css/bootstrap.min.css" rel="stylesheet">
 <link href="../../resources/css/datepicker3.css" rel="stylesheet">
@@ -30,7 +30,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Northern Fame e-Bookstore</a>
+				<a class="navbar-brand" href="charts.html">Northern Fame e-Bookstore</a>
 				<ul class="user-menu">
 					<li class="dropdown pull-right">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Admin <span class="caret"></span></a>
@@ -77,83 +77,158 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
-					<div class="panel-heading">Advanced Table</div>
-					<div class="panel-body">
-						<table data-toggle="table" data-url="tables/data1.json"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
-						    <thead>
-						    <tr>
-						        <th data-field="state" data-checkbox="true" >Item ID</th>
-						        <th data-field="id" data-sortable="true">Item ID</th>
-						        <th data-field="name"  data-sortable="true">Item Name</th>
-						        <th data-field="price" data-sortable="true">Item Price</th>
-						    </tr>
-						    </thead>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div><!--/.row-->	
-		<div class="row">
-			<div class="col-md-6">
-				<div class="panel panel-default">
-					<div class="panel-heading">Basic Table</div>
-					<div class="panel-body">
-						<table data-toggle="table" data-url="tables/data2.json" >
-						    <thead>
-						    <tr>
-						        <th data-field="id" data-align="right">Item ID</th>
-						        <th data-field="name">Item Name</th>
-						        <th data-field="price">Item Price</th>
-						    </tr>
-						    </thead>
-						</table>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="panel panel-default">
-					<div class="panel-heading">Styled Table</div>
-					<div class="panel-body">
-						<table data-toggle="table" id="table-style" data-url="tables/data2.json" data-row-style="rowStyle">
-						    <thead>
-						    <tr>
-						        <th data-field="id" data-align="right" >Item ID</th>
-						        <th data-field="name" >Item Name</th>
-						        <th data-field="price" >Item Price</th>
-						    </tr>
-						    </thead>
-						</table>
-						<script>
-						    $(function () {
-						        $('#hover, #striped, #condensed').click(function () {
-						            var classes = 'table';
-						
-						            if ($('#hover').prop('checked')) {
-						                classes += ' table-hover';
-						            }
-						            if ($('#condensed').prop('checked')) {
-						                classes += ' table-condensed';
-						            }
-						            $('#table-style').bootstrapTable('destroy')
-						                .bootstrapTable({
-						                    classes: classes,
-						                    striped: $('#striped').prop('checked')
-						                });
-						        });
-						    });
-						
-						    function rowStyle(row, index) {
-						        var classes = ['active', 'success', 'info', 'warning', 'danger'];
-						
-						        if (index % 2 === 0 && index / 2 < classes.length) {
-						            return {
-						                classes: classes[index / 2]
-						            };
-						        }
-						        return {};
-						    }
-						</script>
-					</div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="../../resources/img/book1.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">RM100</h4>
+                                <h4><a href="#">Harry Potter</a>
+                                </h4>
+                                <p>This book is about Harry Potter.</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#harryPotter">Edit</button>
+
+                                <!-- Modal -->
+                                <div id="harryPotter" class="modal fade" role="dialog">
+                                  <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Harry Potter</h4>
+                                      </div>
+                                      <div class="modal-body">
+                                         <form role="form">
+                                            <div class="form-group">
+                                              <label for="usr">Name:</label>
+                                              <input type="text" class="form-control" id="usr">
+                                            </div>
+                                             <div class="form-group">
+                                              <label for="usr">Description:</label>
+                                              <input type="text" class="form-control" id="usr">
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="pwd">Price:</label>
+                                              <input type="text" class="form-control" id="pwd">
+                                            </div>
+                                          </form>
+                                                                              </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                                <button type="button" class="btn btn-default">Default</button>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="../../resources/img/book2.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">RM100</h4>
+                                <h4><a href="#">Lord of the Rings</a>
+                                </h4>
+                                <p>This book is about Lord of the Rings</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#lotr">Edit</button>
+
+                                <!-- Modal -->
+                                <div id="lotr" class="modal fade" role="dialog">
+                                  <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Lord of the Rings</h4>
+                                      </div>
+                                      <div class="modal-body">
+                                        <form role="form">
+                                            <div class="form-group">
+                                              <label for="usr">Name:</label>
+                                              <input type="text" class="form-control" id="usr">
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="usr">Description:</label>
+                                              <input type="text" class="form-control" id="usr">
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="pwd">Price:</label>
+                                              <input type="text" class="form-control" id="pwd">
+                                            </div>
+                                          </form>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                                <button type="button" class="btn btn-default">Default</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="../../resources/img/book3.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">RM100</h4>
+                                <h4><a href="#">Narnia</a>
+                                </h4>
+                                <p>This book is about Narnia</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Edit</button>
+
+                                <!-- Modal -->
+                                <div id="myModal" class="modal fade" role="dialog">
+                                  <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Narnia</h4>
+                                      </div>
+                                      <div class="modal-body">
+                                        <form role="form">
+                                            <div class="form-group">
+                                              <label for="usr">Name:</label>
+                                              <input type="text" class="form-control" id="usr">
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="usr">Description:</label>
+                                              <input type="text" class="form-control" id="usr">
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                              <label for="pwd">Price:</label>
+                                              <input type="text" class="form-control" id="pwd">
+                                            </div>
+                                            
+                                          </form>
+                                      </div>
+                                      <div class="modal-footer">
+                                           <button type="button" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                                <button type="button" class="btn btn-default">Default</button>
+                            </div>
+                          
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</div><!--/.row-->	
