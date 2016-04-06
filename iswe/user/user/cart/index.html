@@ -83,7 +83,40 @@
 							<td><a href="../../user/recentadd.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
 							<td colspan="2" class="hidden-xs"></td>
 							<td class="hidden-xs text-center"><strong>Total RM100</strong></td>
-							<td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+							<td><a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#harryPotter">Checkout <i class="fa fa-angle-right"></i></a></td>
+                            <div id="harryPotter" class="modal fade" role="dialog">
+                                  <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Enter payment details</h4>
+                                      </div>
+                                      <div class="modal-body">
+                                         <form role="form">
+                                            <div class="form-group">
+                                              <label for="usr">Name:</label>
+                                              <input type="text" class="form-control" id="usr">
+                                            </div>
+                                             <div class="form-group">
+                                              <label for="usr">Card number:</label>
+                                              <input type="text" class="form-control" id="usr">
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="pwd">CCV:</label>
+                                              <input type="text" class="form-control" id="pwd">
+                                            </div>
+                                          </form>
+                                                                              </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary" onclick="window.location.href='successful.html'">Pay now!</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </div>
 						</tr>
 					</tfoot>
 				</table>
