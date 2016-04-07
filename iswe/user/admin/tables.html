@@ -61,13 +61,7 @@
 	</div><!--/.sidebar-->
 		
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
-		<div class="row">
-			<ol class="breadcrumb">
-				<li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-				<li class="active">Icons</li>
-			</ol>
-		</div><!--/.row-->
-		
+	
 		<div class="row">
 			<div class="col-lg-12">
 				<h1 class="page-header">Inventory</h1>
@@ -123,7 +117,7 @@
 
                                   </div>
                                 </div>
-                                <button type="button" class="btn btn-default">Default</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                             </div>
                            
                         </div>
@@ -173,7 +167,7 @@
 
                                   </div>
                                 </div>
-                                <button type="button" class="btn btn-default">Default</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                             </div>
                             
                         </div>
@@ -225,14 +219,52 @@
 
                                   </div>
                                 </div>
-                                <button type="button" class="btn btn-default">Default</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                             </div>
                           
                         </div>
                     </div>
+                    <a class="btn btn-primary btn-lg" role="button" data-target="#book" data-toggle="modal">Add book +</a>
+                                <!-- Modal -->
+                                <div id="book" class="modal fade" role="dialog">
+                                  <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Add book</h4>
+                                      </div>
+                                      <div class="modal-body">
+                                        <form role="form">
+                                            <div class="form-group">
+                                              <label for="usr">Name:</label>
+                                              <input type="text" class="form-control" id="usr">
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="pwd">Description:</label>
+                                              <input type="text" class="form-control" id="pwd">
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="pwd">Price:</label>
+                                              <input type="text" class="form-control" id="pwd">
+                                            </div>
+                                          </form>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary" onclick="window.location.href='about.html'">Send!</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                      </div>
+                                      </div>
+                                    </div>
+                                  
+          </div> 
 				</div>
+                
 			</div>
+            
 		</div><!--/.row-->	
+        
 		
 		
 	</div><!--/.main-->
