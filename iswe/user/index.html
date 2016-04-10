@@ -48,7 +48,9 @@
 				                        	<label class="sr-only" for="password">Password</label>
 				                        	<input type="password" name="password" placeholder="Password" class="form-password form-control" id="form-password">
 				                        </div>
-				                        <button type="submit" class="btn" onclick="check(this.form)">Login!</button>
+				                        <button type="submit" class="btn" onclick="check(this.form);
+                                                                                   close_window();
+                                                                                   return false;">Login!</button>
 				                    </form>
                                     <script language="javascript">
                                         function check(form) { /*function to check userid & password*/
