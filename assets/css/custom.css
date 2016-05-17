@@ -13,3 +13,7 @@ a, a:hover, a:focus {
 b{
     color:#8BC34A;
 }
+
+.header-filter {
+  background-image: url(../img/background.JPG)
+}
