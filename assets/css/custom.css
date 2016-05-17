@@ -1,4 +1,12 @@
-.row {
-    margin-right: 15;
-    margin-left: 15;
+.navbar, .navbar.navbar-default {
+    background-color: #;
+    color: #ffffff;
+}
+
+a, a:hover, a:focus {
+    color: #03A9F4;
+}
+
+b{
+    color:#B3E5FC;
 }
