@@ -1,12 +1,15 @@
+/*This is to change the navigational bar*/
 .navbar, .navbar.navbar-default {
-    background-color: #;
+    background-color: #4CAF50;
     color: #ffffff;
 }
 
+/*This is to change the hyperlink*/
 a, a:hover, a:focus {
-    color: #03A9F4;
+    color: #4CAF50;
 }
 
+/*This is to change the bold*/
 b{
-    color:#B3E5FC;
+    color:#8BC34A;
 }
