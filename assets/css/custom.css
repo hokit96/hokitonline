@@ -1,16 +1,27 @@
 /*This is to change the navigational bar*/
-.navbar, .navbar.navbar-default {
+
+.navbar,
+.navbar.navbar-default {
     background-color: #4CAF50;
     color: #ffffff;
 }
 
+
 /*This is to change the hyperlink*/
-a, a:hover, a:focus {
+
+a,
+a:hover,
+a:focus {
     color: #4CAF50;
 }
 
+
 /*This is to change the bold*/
-b{
-    color:#8BC34A;
+
+b {
+    color: #8BC34A;
 }
 
+.header-filter {
+    background-image: url(https://goo.gl/photos/U7qa5FiAtWosydmt8);
+}
