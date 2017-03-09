@@ -1,0 +1,183 @@
+﻿<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Web Ordering</title>
+<link rel="shortcut icon" href="favicon.png">
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<!--JAVASCRIPT-->
+<script type="text/javascript">
+alert('Please read the rules below before you order...');
+</script>
+</head>
+
+<body oncontextmenu="return false;"> <!--JAVASCRIPT event, disable right click-->
+
+
+<div id="wrapper" >
+
+	<div id="header">
+
+<center>
+		<div id="header-menu" style="margin-right:20px; margin-top:10px; border-color: 0; word-spacing:30%">
+				<ul>
+					<li><a href="Home.html">Home</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Location.html">Location</a></li>
+					<li><a href="Menu.html">Menu</a>
+						<ul>
+							<li><a href="Asian classic.html">Asian food</a></li>
+							<li><a href="Western.html">Western food</a></li>
+							<li><a href="pasta classic.html">Pasta classic</a></li>
+							<li><a href="Cakes.html">Cakes</a></li>
+						</ul>
+							</li>
+								<li><a href="Web ordering.html">Web Ordering</a></li>
+								<li><a href="Contact Us.html">Contact Us</a></li>
+								<li><a href="Feedback.html">Feedback</a></li>
+				</ul>
+		</div>		
+</center>
+</div>
+
+<div id="logo" style="margin-left: 13%; margin-top: 5%"> <!--margin top for all page except home page-->
+	<table cellpadding="0" cellspacing="0" style="width: 100%; height: 100%">
+		<tr>
+			<td><img src="logo.png">
+				<span style="font-size:65px; vertical-align: top; margin-left: 50px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: purple">Web Order
+				</span>
+			</td> <!--SPAN MEANS IN ONE LINE-->
+		</tr>
+	</table>
+	</div>
+
+<div id="container">
+
+<div id="content-content">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+<center>
+<font color="maroon" >
+	<em><p>1. Please insert your information by following the form required.</p>
+	<p>2. Your order will be confirm through telephone communication or email.</p>
+	<p>3. Your order will be terminated if you are given false information.</p>
+	<p>4. Make your order by 2 hours before, delivery services start from 12pm to 10pm</p>
+	<p>5. All of these order should be paid by cash when it delivered destination</p></em>
+</font>
+<center>
+<p style="color: red">_________________________________________________________________________________________________________</p>
+</center>
+
+<form>
+   		<table width="80%" cellpadding="10" cellspacing="10" align="center">
+            <tr>
+            	<td>First Name : <input type="text" style="background-color:#F2F5A9" name="First_Name"></td> <!--JAVASCRIPT-->
+            	<td>Last Name : <input type="text" style="background-color:#F2F5A9" name="Last_Name"></td>
+            </tr>
+			<tr>
+            	<td>Email Address : <input type="text" value="" size="30" style="background-color:#F2F5A9" placeholder="Insert your email address..."></td> <!--JAVASCRIPT--//onfocus= when you click on this, it will disappear-->
+        		<td>Gender : 
+        			<select name="Gender" style="background-color:#F2F5A9" class="required">
+        				<option value="Male">Male</option>
+        				<option value="Female">Female</option>
+           			</select>
+				 </td>  
+		  </tr>
+            <tr>
+            	<td>Contact Number 1 : <input type="text" style="background-color:#F2F5A9" name="Contact_Number 1"></td>
+            	<td>Contact Number 2 : <input type="text" style="background-color:#F2F5A9" name="Contact_Number 2"></td>
+            </tr>
+   	  </table>
+</form>
+<center>
+<p style="color: red">_________________________________________________________________________________________________________</p>
+<p><font size="6">Full Address</font></p>
+</center>
+     
+      <table width="50%" cellpadding="3" cellspacing="10" align="center">
+            <tr>
+           		<td>City</td>
+           		<td><input type="text" style="background-color:#F2F5A9" size="30"></td>
+           	</tr>
+           	<tr>	
+           		<td>State</td>
+           		<td><input type="text" style="background-color:#F2F5A9"  size="30"></td>
+           	</tr>
+           	<tr>
+           		<td>Postcode</td>
+           		<td><input type="text" style="background-color:#F2F5A9"  size="30"></td>
+           	</tr>
+           	<tr>
+           		<td>Country</td>
+           		<td><input type="text" style="background-color:#F2F5A9"  size="30"></td>
+           	</tr>
+      </table>
+                      	
+<center>
+<p style="color: red">_________________________________________________________________________________________________________</p>
+<p><font size="6">Your choices</font></p>
+</center>
+
+      <table width="50%" cellpadding="3" cellspacing="10" align="center">
+			<tr><td>Menu *</td><td>
+                <select name="Menu" style="background-color:#F2F5A9" class="required">
+                	<option value="" disabled="disabled">- Choose Menu -</option>
+					<option value="Cheesecake">Cheesecake</option>
+					<option value="Pure choco">Pure choco</option>
+					<option value="Strawberry indulgence">Strawberry indulgence</option>
+					<option value="Peanut butter">Peanut butter</option>
+					<option value="Double chocolate">Double chocolate</option>
+					<option value="Rainbow coffee mixed">Rainbow coffee mixed</option>
+					<option value="Chocolate chips mixed">Chocolate chips mixed</option>
+					<option value="Vanilla rainbow">Vanilla rainbow</option>
+					<option value="Strawberry indulgence with vanilla">Strawberry indulgence with vanilla</option>
+					<option value="Pure butter coffee">Pure butter coffee</option>
+					<option value="Cheese cake">Cheese cake</option>
+					<option value="Peanut banana">Peanut banana</option>
+					<td></td><tr valign="top"><td>Size *</td><td>
+                <select name="Size" style="background-color:#F2F5A9" class="required">
+                	<option value="" disabled="disabled">- Choose Size -</option>
+					<option value="Malaysia">Small - 1kg</option>
+					<option value="Malaysia">Medium - 2kg</option>
+					<option value="Malaysia">Large - 5kg</option>
+                </select>
+       <br>
+       <br>
+       
+              <tr>
+				<td style="text-align:center"><input type="button" style="background-color:#F79F81" value="Return to home" onclick="window.location='Home.html'"></td>
+            	<td style="text-align:center"><input type="button" style="background-color:#81F781" value="Confirm Order" onclick="window.location='Thank you order.html'"></td> <!--JAVASCRIPT ONCLICK-->
+			</tr>
+		</table>
+          
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+</div>
+</div>
+
+	<div id="footer" >
+		<div class="footer-inner">
+			<a href="Career.html">Career</a><font color="blue"><b> | </b></font> <!--Font color = to adjust color of | -->
+			<a href="FAQs.html">FAQs</a><font color="blue"><b> | </b></font>
+			<a href="Terms and conditions.html">Terms & Conditions</a>
+		</div>
+
+
+			<i><marquee width="100%" style="font-size: 20px; font-family:AngsanaUPC" direction="right">
+				Copyright @ TOP SECRET BAKERY MALAYSIA SDN BHD
+			</marquee></i>
+	</div>
+
+
+
+</body>
+
+</html>
