@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>homepage | hokit.online</title>
-
+    <link rel="shortcut icon" type="image/x-icon" href="img/new.png" />
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -13,12 +13,16 @@
 </head>
 
 <body>
+
+
+
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="#" class="brand-logo"><img src="img/new.png" alt="HTML5 Icon" width="48" height="48" style="margin-top:10%; margin-bottom:10%"></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Home</a></li>
-                
+                <li class="col s1"><a href="index.html">Home</a></li>
+
+
             </ul>
 
             <ul id="slide-out" class="side-nav">
@@ -48,13 +52,14 @@
         </div>
     </nav>
 
+
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
             <div class="container">
-                <br><br>
-                <h1 class="header center black-text text-lighten-2">Hi there</h1>
+                <p></p><br><br><br><br>
+                <h1 class="header center black-text text-lighten-2">HOKIT</h1>
                 <div class="row center">
-                    <h5 class="header  black-text col s12 light">Welcome to my site! At here you will know more about me. To view my blog, please press the button below.</h5>
+                    <h5 class="header  black-text col s12 light">just a normal human being</h5>
                 </div>
                 <div class="row center">
                     <a href="#" id="blog-nav" class="btn-large waves-effect waves-light black lighten-1" onclick="Materialize.toast('Currently under development and migration. Please come back in future.', 2000)">hokit's Blog</a>
@@ -112,20 +117,20 @@
                 </div>
             </div>
         </div>
-        <div class="parallax"><img src="img/background2.jpg" alt=""></div>
+        <div class="parallax"><img src="img/background1.jpg" alt=""></div>
     </div>
 
     <div class="container">
         <div class="section">
-
+            <div class="divider"></div>
             <div class="row">
                 <div class="col s12 center">
                     <h3><i class="mdi-content-send brown-text"></i></h3>
                     <h4>Contact me</h4>
-                    <ul class="collapsible" data-collapsible="accordion">
+                    <ul class="collapsible popout" data-collapsible="accordion">
                         <li>
                             <div class="collapsible-header"><i class="material-icons">email</i>Email</div>
-                            <div class="collapsible-body"><span><a href="mailto:hokit96@ive.com?Subject=Hi%there" target="_top">hokit96@live.com</a></span></div>
+                            <div class="collapsible-body" style="text-align:center;"><span>Hi there, you may drop me an email at <a href="mailto:hokit96@ive.com?Subject=Hi%there" target="_top">hokit96@live.com</a>, normally I will reply as soon as possible during day time. In case I didn't reply your email, please leave me message on Facebook Messenger.</span></div>
                         </li>
                         <li>
                             <div class="collapsible-header"><i class="material-icons">laptop</i>Social media</div>
@@ -136,30 +141,22 @@
                             <div class="collapsible-body"><span>Currently not open for public.</span></div>
                         </li>
                     </ul>
+                    <span style="font-style: italic">active during daytime</span>
                 </div>
             </div>
-
+            <div class="divider"></div>
         </div>
     </div>
 
 
-    <div class="container valign-wrapper">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <div class="row center">
-                    <h5 class="header col s12 light"></h5>
-                </div>
-            </div>
-        </div>
-       <!-- <div class="parallax"><img src="" alt=""></div>-->
-    </div>
+
 
     <footer class="page-footer grey darken-4">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">About</h5>
-                    <p class="grey-text text-lighten-4">HOKIT, 21 , Malaysian.IT Student, Intermediate Programmer and Gamer</p>
+                    Software Engineering student, Intermediate Programmer, Intermediate Web Designer, Gamer. Diploma holder of Information and Communication Technology specialism in Software Engineering and currently pursuing Degree in Software Engineering at <a class="grey-text lighten-1" href="http://http://apu.edu.my/">Asia Pacific University</a>.
                 </div>
 
                 <div class="col l3 s12" style="float:right">
@@ -167,14 +164,18 @@
                     <ul>
                         <li><a class="white-text" href="https://github.com/hokitonline">GitHub</a></li>
                         <li><a class="white-text" href="https://stackoverflow.com/users/6017201/hokit">Stackoverflow</a></li>
+                        <li><a class="white-text" href="https://www.linkedin.com/in/ng-ho-kit-0198a311b/">Linkedin</a></li>
+
 
                     </ul>
                 </div>
             </div>
         </div>
+
+
         <div class="footer-copyright">
             <div class="container">
-                Made by <a class="brown-text text-lighten-3" href="#">hokit</a> with love <3. Customize using <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize.</a> Hosted on <a class="brown-text text-lighten-3" href="http://github.com">GitHub pages</a>.
+                Made by <a class="grey-text lighten-1" href="#">hokit</a> with love. Customize using <a class="grey-text lighten-1" href="http://materializecss.com"> Materialize.</a> Hosted on <a class="grey-text lighten-1 " href="http://github.com">GitHub pages</a>.
             </div>
         </div>
     </footer>
@@ -185,6 +186,16 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="js/custom.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //$('.collapsible').collapsible();
+            $('.parallax').parallax();
+            $('.carousel').carousel();
+
+
+
+        });
+    </script>
 
 </body>
 
