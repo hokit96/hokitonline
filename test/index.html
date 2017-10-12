@@ -4,12 +4,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>homepage | hokit.online</title>
+    <title>HOME | hokit.online</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/new.png" />
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="bower_components/materialize-social/materialize-social.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -20,7 +23,9 @@
         <div class="nav-wrapper container">
             <a id="logo-container" href="#" class="brand-logo"><img src="img/new.png" alt="HTML5 Icon" width="48" height="48" style="margin-top:10%; margin-bottom:10%"></a>
             <ul class="right hide-on-med-and-down">
-                <li class="col s1"><a href="index.html">Home</a></li>
+                <li class="col s1"><a href="#">Home</a></li>
+                <li class="col s1"><a href="#contact">Contact</a></li>
+                <li class="col s1"><a href="#footer">About</a></li>
 
 
             </ul>
@@ -56,15 +61,15 @@
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
             <div class="container">
-                <p></p><br><br><br><br>
+
                 <h1 class="header center black-text text-lighten-2">HOKIT</h1>
                 <div class="row center">
+
                     <h5 class="header  black-text col s12 light">just a normal human being</h5>
+                    <a href="#!" id="blog-nav" class="btn-large waves-effect waves-light black lighten-1" onclick="Materialize.toast('Currently under development.', 2000)">ENTER BLOG</a>
                 </div>
-                <div class="row center">
-                    <a href="#" id="blog-nav" class="btn-large waves-effect waves-light black lighten-1" onclick="Materialize.toast('Currently under development and migration. Please come back in future.', 2000)">hokit's Blog</a>
-                </div>
-                <br><br>
+
+
 
             </div>
         </div>
@@ -83,6 +88,10 @@
                         <h5 class="center">Study</h5>
 
                         <p class="light">Currently a diploma holder (Diploma in Information and Communication Technology specialism in Software Engineering). And pursuing my Degree (in Software Engineering) study at Asia Pacific University</p>
+                        <blockquote style="border-left: 5px solid #212121;">
+                            Current level: Degree level 2
+
+                        </blockquote>
                     </div>
                 </div>
 
@@ -92,6 +101,10 @@
                         <h5 class="center">Technical Knowledge</h5>
 
                         <p class="light">C, C++, Java, jQuery, Web Development, Visual Basic .NET, MySQL, SQLite and etc.</p>
+                        <blockquote style="border-left: 5px solid #64b5f6;">
+                            currently focus on web development
+                        </blockquote>
+
                     </div>
                 </div>
 
@@ -101,6 +114,12 @@
                         <h5 class="center">Games</h5>
 
                         <p class="light">I play various type of game, from PC to Mobile gaming. Most favourite game type are those MOBA and platformer.</p>
+                        <blockquote style="border-left: 5px solid #212121;">
+                            <a href="http://pvp.qq.com/" class="grey-text">#王者荣耀</a>
+                            <a href="https://terraria.org//" class="grey-text">#Terraria</a>
+                            <a href="http://store.steampowered.com/app/251570/7_Days_to_Die/" class="grey-text">#7daystodie</a>
+
+                        </blockquote>
                     </div>
                 </div>
             </div>
@@ -111,52 +130,78 @@
 
     <div class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
-            <div class="container">
+            <div class="container" id="">
                 <div class="row center">
                     <h5 class="header col s12 light"></h5>
+                    <div class="row center">
+
+
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="parallax"><img src="img/background1.jpg" alt=""></div>
+        <div class="parallax"><img src="img/background2.jpg" alt=""></div>
     </div>
 
-    <div class="container">
+    <div class="container" id="contact">
         <div class="section">
-            <div class="divider"></div>
+
             <div class="row">
                 <div class="col s12 center">
                     <h3><i class="mdi-content-send brown-text"></i></h3>
                     <h4>Contact me</h4>
-                    <ul class="collapsible popout" data-collapsible="accordion">
+                    <ul class="collapsible" data-collapsible="accordion">
                         <li>
                             <div class="collapsible-header"><i class="material-icons">email</i>Email</div>
-                            <div class="collapsible-body" style="text-align:center;"><span>Hi there, you may drop me an email at <a href="mailto:hokit96@ive.com?Subject=Hi%there" target="_top">hokit96@live.com</a>, normally I will reply as soon as possible during day time. In case I didn't reply your email, please leave me message on Facebook Messenger.</span></div>
+                            <div class="collapsible-body" style="text-align:center;"><span>Hi there, you may drop me an email at <a class="grey-text"href="mailto:hokit96@ive.com?Subject=Hi%there" target="_top">hokit96@live.com</a>, normally I will reply as soon as possible during day time. In case I didn't reply your email, please leave me message on Facebook Messenger.</span></div>
                         </li>
                         <li>
-                            <div class="collapsible-header"><i class="material-icons">laptop</i>Social media</div>
-                            <div class="collapsible-body"><span></span></div>
+                            <div class="collapsible-header"><i class="material-icons">laptop</i>Social</div>
+                            <div class="collapsible-body">
+                                <a class="waves-effect waves-light social-icon btn-large facebook" href="https://www.facebook.com/hokit1996"><i class="fa fa-facebook"></i></a>
+                                <a class="waves-effect waves-light social-icon btn-large instagram" href="https://www.instagram.com/hokit96"><i class="fa fa-instagram"></i></a>
+                                <a class="waves-effect waves-light social-icon btn-large twitter" href="https://www.twitter.com/hokit96"><i class="fa fa-twitter"></i></a>
+                                <a class="waves-effect waves-light social-icon btn-large linkedin" href="www.linkedin.com/in/hokit96/"><i class="fa fa-linkedin"></i></a>
+                                <a class="waves-effect waves-light social-icon btn-large github" href="https://github.com/hokitonline"><i class="fa fa-github"></i></a>
+                                <a class="waves-effect waves-light social-icon btn-large pinterest" href="https://www.pinterest.com/hokit96/"><i class="fa fa-pinterest"></i></a>
+                            </div>
                         </li>
                         <li>
-                            <div class="collapsible-header"><i class="material-icons">phone</i>Phone number</div>
+                            <div class="collapsible-header"><i class="material-icons">phone</i>Phone</div>
                             <div class="collapsible-body"><span>Currently not open for public.</span></div>
                         </li>
                     </ul>
-                    <span style="font-style: italic">active during daytime</span>
+                    <blockquote style="text-align: justify;border-left: 5px solid #64b5f6;">
+                        available during daytime.
+                    </blockquote>
+                    <blockquote style="text-align: justify;border-left: 5px solid #212121;">
+                        won't entertain after 9PM.
+                    </blockquote>
+
+
                 </div>
             </div>
-            <div class="divider"></div>
+
         </div>
     </div>
 
 
 
 
-    <footer class="page-footer grey darken-4">
+    <footer class="page-footer grey darken-4" id="footer">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">About</h5>
-                    Software Engineering student, Intermediate Programmer, Intermediate Web Designer, Gamer. Diploma holder of Information and Communication Technology specialism in Software Engineering and currently pursuing Degree in Software Engineering at <a class="grey-text lighten-1" href="http://http://apu.edu.my/">Asia Pacific University</a>.
+                    Software engineering student, intermediate programmer, intermediate web designer, gamer. Diploma holder of Information and Communication Technology specialism in Software Engineering and currently pursuing Degree in Software Engineering at <a class="grey-text lighten-1" href="http://http://apu.edu.my/">Asia Pacific University</a>.
+
+                    <blockquote style="border-left: 5px solid #64b5f6;">
+                        #photograph #games #anime #programming #weirdguy
+                    </blockquote>
+
+
+
+
                 </div>
 
                 <div class="col l3 s12" style="float:right">
@@ -175,7 +220,7 @@
 
         <div class="footer-copyright">
             <div class="container">
-                Made by <a class="grey-text lighten-1" href="#">hokit</a> with love. Customize using <a class="grey-text lighten-1" href="http://materializecss.com"> Materialize.</a> Hosted on <a class="grey-text lighten-1 " href="http://github.com">GitHub pages</a>.
+                Crafted by <a class="grey-text lighten-1" href="#">hokit</a> with love using <a class="grey-text lighten-1" href="http://materializecss.com"> Materialize</a> and hosted on <a class="grey-text lighten-1 " href="http://github.com">GitHub</a>.
             </div>
         </div>
     </footer>
