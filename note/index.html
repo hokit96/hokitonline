@@ -14,25 +14,41 @@
 
 
 <body>
+    <br>
+    
+    <!--To contain the buttons and append the cards into here-->
     <div class="container">
-        <div class="fixed-action-btn horizontal">
-            <a class="btn-floating btn-large red">
+        <div class="fixed-action-btn horizontal"> <!--write  click-to-toggle  to make it click to toggle-->
+            <a id="menu" class="btn-floating btn-large red" onclick="dismissDiscovery();">
                 <i class="large material-icons">menu</i>
             </a>
             <ul>
-                <li><a class="btn-floating blue"><i class="material-icons">settings</i></a></li>
-                <li><a class="btn-floating green"><i class="material-icons">format_quote</i></a></li>
-                <li><a class="btn-floating yellow"><i class="material-icons">publish</i></a></li>
-                <li><a class="btn-floating orange modal-trigger" href="#addNewNote"><i class="material-icons">mode_edit</i></a></li>
+                <li><a class="btn-floating blue" onclick="underDev();"><i class="material-icons">settings</i></a></li>
+                <li><a class="btn-floating green" onclick="underDev();"><i class="material-icons">format_quote</i></a></li>
+                <li><a class="btn-floating yellow" onclick="underDev();"><i class="material-icons">publish</i></a></li>
+                <li><a class="btn-floating orange modal-trigger" href="#addNewNote" id="writeNew"><i class="material-icons">mode_edit</i></a></li>
             </ul>
         </div>
-        
-      
     </div>
 
+    
+
+
+    <!-- FeatureDiscovery-->
+    <div class="tap-target" data-activates="menu">
+        <div class="tap-target-content">
+            <h5>Hi there</h5>
+            <p>click here to access the menu.</p>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Add new note -->
     <div id="addNewNote" class="modal modal-fixed-footer">
         <div class="modal-content">
-            <h4>Add new note</h4>
+            <h4 class="blue-text">Add new note</h4>
+            <br>
             <form>
                 <div class="row">
                     <div class="input-field col s12">
@@ -40,7 +56,6 @@
                         <label for="noteTitle">Title</label>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="input-field col s12">
                         <textarea id="noteContent" class="materialize-textarea"></textarea>
@@ -48,16 +63,14 @@
                     </div>
                 </div>
             </form>
-
-
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" onclick="newNote();reset();">add</a>
-            <a href="#!" class="modal-action waves-effect waves-green btn-flat" value="Clear" onclick="reset();">reset</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-yellow btn-flat" onclick="newNote();reset();">add</a>
+            <a href="#!" class="modal-action waves-effect waves-red btn-flat" value="Clear" onclick="reset();">reset</a>
         </div>
     </div>
-
-
+    
+    
 
 
     <!--  Scripts-->
@@ -65,7 +78,8 @@
     <script src="source/js/materialize.js"></script>
     <script src="source/js/init.js"></script>
     <script src="source/js/custom.js"></script>
-
+    <script>
+    </script>
 </body>
 
 
