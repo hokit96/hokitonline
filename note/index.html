@@ -15,10 +15,13 @@
 
 <body>
     <br>
-    
+
     <!--To contain the buttons and append the cards into here-->
     <div class="container">
-        <div class="fixed-action-btn horizontal"> <!--write  click-to-toggle  to make it click to toggle-->
+        
+
+        <div class="fixed-action-btn horizontal">
+            <!--write  click-to-toggle  to make it click to toggle-->
             <a id="menu" class="btn-floating btn-large red" onclick="dismissDiscovery();">
                 <i class="large material-icons">menu</i>
             </a>
@@ -31,19 +34,21 @@
         </div>
     </div>
 
-    
 
 
-    <!-- FeatureDiscovery-->
+
+
+
+    <!-- FeatureDiscovery
     <div class="tap-target" data-activates="menu">
         <div class="tap-target-content">
             <h5>Hi there</h5>
             <p>click here to access the menu.</p>
         </div>
     </div>
-    
-    
-    
+-->
+
+
     <!-- Add new note -->
     <div id="addNewNote" class="modal modal-fixed-footer">
         <div class="modal-content">
@@ -65,18 +70,36 @@
             </form>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-yellow btn-flat" onclick="newNote();reset();">add</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-yellow btn-flat" onclick="submit(); reset();" id="addBtn">add</a>
             <a href="#!" class="modal-action waves-effect waves-red btn-flat" value="Clear" onclick="reset();">reset</a>
         </div>
     </div>
-    
-    
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDZi2Xw4eDG0KnrzviElxZdd3u3OYSy8jw",
+            authDomain: "minn-minnote.firebaseapp.com",
+            databaseURL: "https://minn-minnote.firebaseio.com",
+            projectId: "minn-minnote",
+            storageBucket: "minn-minnote.appspot.com",
+            messagingSenderId: "46142391620"
+        };
+        firebase.initializeApp(config);
+    </script>
 
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="source/js/materialize.js"></script>
     <script src="source/js/init.js"></script>
+    <script src="source/js/functions.js"></script>
     <script src="source/js/custom.js"></script>
     <script>
     </script>
