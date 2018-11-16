@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Picker v1</title>
+    </head>
+<body>
+
+    <button onclick="foodPicker()">Where to eat</button>
+
+    <p id="result"></p>
+
+    <script>
+        function foodPicker() {
+            var x = Math.floor((Math.random() * 7) + 1);
+            var result;
+            if (x == '1'){
+                x = 'Sabah Lat Jiu'
+            }
+            if (x == '2'){
+                x = 'Hakka'
+            }
+            if (x == '3'){
+                x = 'Sarawak Noodle'
+            }
+            if (x == '4'){
+                x = 'Foodcourt'
+            }
+            if (x == '5'){
+                x = 'Da Da Li'
+            }
+            if (x == '6'){
+                x = 'Jojo'
+            }
+            if (x == '7'){
+                x = 'Nasi Lemak'
+            }
+                document.getElementById("result").innerHTML = 'Today eat ' + x;
+        }
+    </script>
+
+</body>
+
+</html>
